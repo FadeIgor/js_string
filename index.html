@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+</head>
+<body>
+    <script>
+        tekst = prompt("wprowadz tekst");
+        //tekst = "Ala ma kota, a kot ma Alę, Ala go kocha, a on ją wcale ;(";
+        document.write(tekst)
+
+        const dlugosc = tekst.length;
+        document.write("<br> tekst ma dlugosc: ", dlugosc)
+
+        const pierwsza = tekst.charAt(0)
+        document.write("<br> pierwsza litera to: ", pierwsza)
+
+        const ostatnia = tekst.charAt(tekst.length-1);
+        document.write("<br> ostatnia litera to: ", ostatnia)
+        document.write("<br> \u{1F691}")
+
+        const tekstN = tekst.replace("kota", "psa")
+        const tekstNN = tekstN.replace("kot", "pies")
+
+        document.write("<br>", tekstNN)
+    </script>
+</body>
+</html>
